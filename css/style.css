@@ -51,7 +51,6 @@
 }
 
 /* ===== GLOBAL ===== */
-
 body {
     font-family: var(--cv-font-body);
     background-color: var(--cv-bg);
@@ -125,7 +124,7 @@ h6 {
 }
 
 .form-control::placeholder {
-    color: var(--cv-text-secondary);
+    color: var(--cv-text-accent);
 }
 
 /* ===== CARDS ===== */
@@ -134,6 +133,11 @@ h6 {
     background-color: var(--cv-surface);
     color: var(--cv-text);
     border-color: var(--cv-border);
+}
+
+.card-img-top {
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
 }
 
 /* ===== TEXT ===== */
