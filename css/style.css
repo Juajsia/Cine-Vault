@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+:root {
+    /* ===== BRAND COLORS ===== */
+    --cv-primary: #E50914;
+    --cv-secondary: #2E5BFF;
+    --cv-tertiary: #F59E0B;
+    --cv-neutral: #0A0D14;
+
+    /* ===== BACKGROUND COLORS ===== */
+    --cv-bg: #10131A;
+    --cv-surface: #191B23;
+    --cv-surface-hover: #252730;
+    --cv-surface-input: #252730;
+
+    /* ===== TEXT COLORS ===== */
+    --cv-text: #E6E6EB;
+    --cv-text-secondary: #A5A5B3;
+    --cv-text-accent: #F5B4AE;
+    --cv-white: #FFFFFF;
+
+    /* ===== BORDERS ===== */
+    --cv-border: #34343E;
+
+    /* ===== SHADOWS ===== */
+    --cv-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+    --cv-shadow-primary: 0 0 20px rgba(229, 9, 20, 0.25);
+
+    /* ===== BOOTSTRAP OVERRIDES ===== */
+    --bs-primary: var(--cv-primary);
+    --bs-secondary: var(--cv-secondary);
+    --bs-warning: var(--cv-tertiary);
+    --bs-dark: var(--cv-neutral);
+
+    --bs-body-bg: var(--cv-bg);
+    --bs-body-color: var(--cv-text);
+
+    --bs-secondary-color: var(--cv-text-secondary);
+    --bs-emphasis-color: var(--cv-white);
+
+    --bs-border-color: var(--cv-border);
+
+    --bs-link-color: var(--cv-text-accent);
+    --bs-link-hover-color: var(--cv-primary);
+
+    --bs-border-radius: 0.5rem;
+    --bs-border-radius-lg: 0.75rem;
+
+    --cv-font-heading: 'Plus Jakarta Sans', sans-serif;
+    --cv-font-body: 'Inter', sans-serif;
+}
+
+/* ===== GLOBAL ===== */
+
+body {
+    font-family: var(--cv-font-body);
+    background-color: var(--cv-bg);
+    color: var(--cv-text);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--cv-font-heading);
+}
+
+/* ===== SURFACES ===== */
+
+.cv-surface {
+    background-color: var(--cv-surface);
+}
+
+.cv-surface-secondary {
+    background-color: var(--cv-surface-hover);
+}
+
+/* ===== BUTTONS ===== */
+
+.btn-primary {
+    --bs-btn-bg: var(--cv-primary);
+    --bs-btn-border-color: var(--cv-primary);
+    --bs-btn-hover-bg: #B80710;
+    --bs-btn-hover-border-color: #B80710;
+    --bs-btn-active-bg: #B80710;
+    --bs-btn-active-border-color: #B80710;
+    --bs-btn-color: var(--cv-white);
+    --bs-btn-hover-color: var(--cv-white);
+}
+
+.btn-secondary {
+    --bs-btn-bg: var(--cv-surface-hover);
+    --bs-btn-border-color: var(--cv-surface-hover);
+    --bs-btn-color: var(--cv-text);
+    --bs-btn-hover-bg: #34343E;
+    --bs-btn-hover-border-color: #34343E;
+    --bs-btn-hover-color: var(--cv-white);
+}
+
+.btn-warning {
+    --bs-btn-bg: var(--cv-tertiary);
+    --bs-btn-border-color: var(--cv-tertiary);
+    --bs-btn-color: var(--cv-neutral);
+    --bs-btn-hover-bg: #D98A05;
+    --bs-btn-hover-border-color: #D98A05;
+}
+
+/* ===== INPUTS ===== */
+
+.form-control,
+.form-select {
+    background-color: var(--cv-surface-input);
+    color: var(--cv-text);
+    border-color: var(--cv-border);
+}
+
+.form-control:focus,
+.form-select:focus {
+    background-color: var(--cv-surface-input);
+    color: var(--cv-text);
+    border-color: var(--cv-primary);
+    box-shadow: 0 0 0 0.25rem rgba(229, 9, 20, 0.20);
+}
+
+.form-control::placeholder {
+    color: var(--cv-text-secondary);
+}
+
+/* ===== CARDS ===== */
+
+.card {
+    background-color: var(--cv-surface);
+    color: var(--cv-text);
+    border-color: var(--cv-border);
+}
+
+/* ===== TEXT ===== */
+
+.text-muted {
+    color: var(--cv-text-secondary) !important;
+}
+
+.cv-text-accent {
+    color: var(--cv-text-accent);
+}
+
+/* ===== BADGES ===== */
+
+.cv-badge-primary {
+    background-color: var(--cv-primary);
+    color: var(--cv-white);
+}
+
+.cv-badge-tertiary {
+    background-color: var(--cv-tertiary);
+    color: var(--cv-neutral);
+}
+
+/* ===== NAVBAR ===== */
+
+.cv-navbar {
+    background-color: var(--cv-neutral);
+    border-bottom: 1px solid var(--cv-border);
+}
+
+/* ===== UTILITIES ===== */
+
+.cv-shadow {
+    box-shadow: var(--cv-shadow);
+}
+
+.cv-shadow-primary {
+    box-shadow: var(--cv-shadow-primary);
+}
